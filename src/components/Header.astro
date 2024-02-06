@@ -1,0 +1,107 @@
+---
+import HeaderButton from "./HeaderButton.astro";
+
+console.log("javascript");
+---
+
+<header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6">
+  <div class="mx-auto text-center mb-8 lg:mb-16">
+    <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-white">
+      Launches SpaceX
+    </h2>
+  </div>
+  <p class="font-light text-gray-500 sm:text-sl dark:text-gray-400">
+    SpaceX designs, manufactures and launches advanced rockets and spacecraft.
+    The company was founded in 2002 to revolutionize space technology, with the
+    ultimate goal of enabling people to live on other planets.
+  </p>
+
+  <nav
+    class="flex flex-col items-center justify-between w-full text-center md:flex-row"
+  >
+    <HeaderButton class="text-white" href="/">
+      <svg
+        slot="bf-icon"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
+        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+        <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path></svg
+      >
+      Home
+    </HeaderButton>
+    <HeaderButton class="text-white" href="/about">
+      <svg
+        slot="bf-icon"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path
+          d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3"
+        ></path>
+        <path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3"></path><path
+          d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path></svg
+      >
+      Nuevos lanzamientos
+    </HeaderButton>
+    <HeaderButton class="text-white" href="/services">
+      <svg
+        slot="bf-icon"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M6 21l6 -5l6 5"></path><path d="M12 13v8"></path>
+        <path
+          d="M3.294 13.678l.166 .281c.52 .88 1.624 1.265 2.605 .91l14.242 -5.165a1.023 1.023 0 0 0 .565 -1.456l-2.62 -4.705a1.087 1.087 0 0 0 -1.447 -.42l-.056 .032l-12.694 7.618c-1.02 .613 -1.357 1.897 -.76 2.905z"
+        ></path>
+        <path d="M14 5l3 5.5"></path></svg
+      >
+      Lanzamientos anteriores
+    </HeaderButton>
+    <HeaderButton class="text-white" href="/contact">
+      <svg
+        slot="bf-icon"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path
+          d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z"
+        ></path>
+        <path d="M10 16h6"></path><path
+          d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+        <path d="M4 8h3"></path><path d="M4 12h3"></path><path d="M4 16h3"
+        ></path>
+      </svg>
+      Contact
+    </HeaderButton>
+  </nav>
+</header>
